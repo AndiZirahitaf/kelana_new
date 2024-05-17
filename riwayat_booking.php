@@ -176,7 +176,7 @@
                             <?php 
                     $createDate = new DateTime($data['tgl_pesanan']);
                     $strip = $createDate->format('Y-m-d');
-                    $time = new DateTime($data['tgl']);
+                    $time = new DateTime($data['tgl']); 
                     $difference = $time->diff($createDate, true);
 
                     $hargaPaket = $data['paket'];
